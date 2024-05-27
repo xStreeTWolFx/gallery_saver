@@ -10,7 +10,7 @@ void main() {
   const MethodChannel channel = MethodChannel('gallery_saver');
 
   setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
+    channel.setMethodCallHandler((MethodCall methodCall) async {
       switch (methodCall.method) {
         case 'saveImage':
           return true;
@@ -22,7 +22,7 @@ void main() {
   });
 
   tearDown(() {
-    channel.setMockMethodCallHandler(null);
+    channel.setMethodCallHandler(null);
   });
 
   test('save image', () async {

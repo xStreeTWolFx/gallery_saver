@@ -43,7 +43,7 @@ class _MyAppState extends State<MyApp> {
                   child: SizedBox.expand(
                     child: TextButton(
                       style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(Colors.blue),
+                        backgroundColor: WidgetStateProperty.all(Colors.blue),
                       ),
                       onPressed: _takePhoto,
                       child: Text(firstButtonText,
@@ -59,7 +59,7 @@ class _MyAppState extends State<MyApp> {
                     child: SizedBox.expand(
                   child: TextButton(
                     style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.white),
+                      backgroundColor: WidgetStateProperty.all(Colors.white),
                     ),
                     onPressed: _recordVideo,
                     child: Text(secondButtonText,
@@ -150,7 +150,7 @@ class _ScreenshotWidgetState extends State<ScreenshotWidget> {
           child: SizedBox.expand(
             child: TextButton(
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.pink),
+                backgroundColor: WidgetStateProperty.all(Colors.pink),
               ),
               onPressed: _saveScreenshot,
               child: Text(screenshotButtonText,
